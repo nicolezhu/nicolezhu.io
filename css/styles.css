@@ -196,6 +196,13 @@ ul > li {
 	color: #00a871;
 }
 
+footer {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	text-align: center;
+}
+
 /* media queries */
 @media only screen and (max-width : 480px) {
 	.nav-section {
