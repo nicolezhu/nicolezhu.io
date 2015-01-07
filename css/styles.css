@@ -126,6 +126,15 @@ h4 {
 	font-weight: 300;
 }
 
+.description a {
+	text-decoration: none;
+	color: #00a871;
+}
+
+.description a:hover {
+	color: #708090;
+}
+
 .org {
 	color: #00a871;
 	line-height: 0;
