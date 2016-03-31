@@ -21,13 +21,13 @@ function readData(data, tabletop) {
 
 function showWorkGrid() {
 	for (i=0; i < projects.length; i++) {
-		$('#work-grid').append('<div class="item"><div class="element-top"><a href="'+ projects[i].link + '"><img src="' + projects[i].screenshot + '" /></a><div class="details"><h4>' + projects[i].project + '</h4><p class="org"><strong>' + projects[i].organization + '</strong></p><p class="description">' + projects[i].description + '</p></div></div></div>');
+		$('#work-grid').append('<div class="item"><div class="element-top"><a href="'+ projects[i].link + '"><div class="img-wrapper"><img src="' + projects[i].screenshot + '" /></div></a><div class="details"><h4>' + projects[i].project + '</h4><p class="org"><strong>' + projects[i].organization + '</strong></p><p class="description">' + projects[i].description + '</p></div></div></div>');
 	}
 }
 
 function showTalksGrid() {
     for (i=0; i < talks.length; i++) {
-        $('#talks-grid').append('<div class="item"><div class="element-top"><a href="'+ talks[i].link + '"><img src="' + talks[i].screenshot + '" /></a><div class="details"><h4>' + talks[i].talk + '</h4><p class="org"><strong>' + talks[i].purpose + '</strong></p><p class="description">' + talks[i].description + '</p></div></div></div>');
+        $('#talks-grid').append('<div class="item"><div class="element-top"><a href="'+ talks[i].link + '"><div class="img-wrapper"><img src="' + talks[i].screenshot + '" /></div></a><div class="details"><h4>' + talks[i].talk + '</h4><p class="org"><strong>' + talks[i].purpose + '</strong></p><p class="description">' + talks[i].description + '</p></div></div></div>');
     }
 }
 
