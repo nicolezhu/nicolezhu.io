@@ -1,266 +1,79 @@
 body {
   margin: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.main-nav,
 .main {
-  position: relative; 
+	max-width: 50em;
+	margin: 0 auto;
+	padding: 2rem;
 }
 
-.main-nav {
-  background: #fff;
-  height: 80px;
-  z-index: 150;
-  margin-bottom: -80px;
-  box-shadow: 0 2px 3px rgba(0,0,0,.2);
+.image {
+	width: 200px;
+	margin: 0 auto;
 }
 
-.main-nav-scrolled {
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
-.main-nav a {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: .9em;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #444135;
-	display: inline-block;
-	margin: 24px 12px;
-}
-
-.main-nav a:hover {
-	color: #00a871;
-}
-
-#nicole-zhu {
-	font-size: 1.5em;
-	margin-left: 3%;
-	font-weight: 100;
-	color: #00a871;
-}
-
-.nav-section {
-	float: right;
-	font-size: 1.5em;
-	margin-right: 3%;
-}
-
-.nav-link {
-	font-weight: 400;
-}
-
-.center-text {
-	text-align: center;
+.image img {
+	width: 100%;
 }
 
 .about {
-	max-width: 60%;
-	padding-left: 20%;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-size: 2em;
-	margin-top: 20%;
-	margin-bottom: 20%;
+	text-align: center;
+	padding-bottom: 2rem;
 }
 
 .about a {
-	color: #708090;
-}
-
-.about a:hover {
-	color: #00a871;
-}
-
-#resume a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 0.6em;
-	color: #00a871;
-	font-weight: 300;
-}
-
-#resume a:hover {
-	color: #708090;
+	border-bottom: 3px solid #000000;
+  text-decoration: none;
 }
 
 .section {
-	width: 100%;
-	padding-top: 3em;
-	padding-bottom: 4em;
-}
-
-.subsection {
-	max-width: 60%;
+	max-width: 80%;
 	margin: 0 auto;
+	padding-bottom: 2em;
 }
 
-.grey {
-	background-color: #f5f5f5;
-}
-
-h1 {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-}
-
-.item {
-	width: 100%;
-}
-
-.element-top {
-	display: table;
-	width: 100%;
+h2 span {
+	border-bottom: 3px solid #000000;
+	padding-bottom: 5px;
 }
 
 h4 {
-	font-size: 1.5em;
-	text-transform: uppercase;
-	-webkit-margin-after: 0;
-	font-weight: 200;
-	border-bottom: 1px solid #708090;
+	margin-bottom: .5rem;
 }
 
-.description {
+.speaking h4 {
+	margin-bottom: 0;
+}
+
+.subsection {
+	margin-bottom: 2em;
+}
+
+.date {
+	margin-top: 0;
+	font-size: .889rem;
 	font-weight: 300;
 }
 
-.description a {
-	text-decoration: none;
-	color: #00a871;
-}
-
-.description a:hover {
-	color: #708090;
-}
-
-.org {
-	color: #00a871;
-	line-height: 0;
-}
-
-.item img {
-	max-width: 100%;
-	margin-top: 10%;
-	-moz-box-shadow: 3px 3px 5px 6px #ccc;
-	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
-	box-shadow: 3px 2px 2px 1px #ccc;
-}
-
-.details {
-	font-family: 'Source Sans Pro', sans-serif;
-	width: 50%;
-	display: table-cell;
-	vertical-align: middle;
-	padding-left: 20px;
-}
-
-.writing-sub {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-.writing-sub h4 {
-	border-bottom: none;
-}
-
-.offset {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.writing-sub a {
-	text-decoration: none;
-	color: #708090;
-}
-
-.writing-sub a:hover {
-	color: #00a871;
-}
-
-ul {
-	list-style-type: square;
-}
-
-ul > li {
-	color: #00a871;
-}
-
-.contact {
-	max-width: 60%;
-	margin: 0 auto;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-size: 2em;
-}
-
-.contact p {
-	margin: 3em 0;
-}
-
-.contact a {
-	color: #708090;
-}
-
-.contact a:hover {
-	color: #00a871;
+a {
+	color: #000000;
 }
 
 footer {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-	font-size: 1em;
 	text-align: center;
+	padding-top: 2em;
 }
 
-/* media queries */
-@media only screen and (max-width : 760px) {
-	.subsection {
-		max-width: 90%;
-	}
-}
+@media only screen and (max-width: 40em) {
+  .main {
+  	padding: .25em;
+  }
 
-@media only screen and (max-width : 680px) {
-	.nav-section {
-		display: none;
-	}
-
-	#nicole-zhu {
-		margin-left: 5%;
-	}
-	.about {
-		margin-top: 40%;
-		max-width: 90%;
-		padding: 5%;
-		font-size: 1.5em;
-	}
-	.details {
-		width: 100%;
-		display: block;
-		padding: 0;
-	}
-	.item-img {
-		width: 100%;
-	}
-	.img-wrapper {
-		width: 60%;
-		margin: 0 auto;
-	}
-	.offset {
-		padding: 0;
-	}
-	.contact {
-		margin-top: 20%;
-		max-width: 90%;
-		font-size: 1.5em;
-		margin-bottom: 20%;
-	}
-}
-
-@media only screen and (max-width : 480px) {
-	.subsection {
-		max-width: 90%;
-	}
+  .about {
+  	font-size: .889rem;
+  }
 }
